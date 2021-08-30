@@ -20,11 +20,11 @@ class _UserListWithListViewBuilderState
             return Card(
               elevation: 10,
               child: ListTile(
-                leading: Image(
-                  width: 100.0,
-                  fit: BoxFit.fitWidth,
-                  image: NetworkImage(
-                      userlistCNInstance.listofusers[index].avatarUrl),
+                leading: ClipOval(
+                  child: Image.network(
+                    userlistCNInstance.listofusers[index].avatarUrl,
+                    fit: BoxFit.fill
+                  ),
                 ),
                 title: Text(
                   userlistCNInstance.listofusers[index].name,
