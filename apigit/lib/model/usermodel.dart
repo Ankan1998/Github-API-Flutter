@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 class UserModel {
   
   final String name;
-  String type;
+  String bio;
   String avatarUrl;
   
   
@@ -11,7 +11,7 @@ class UserModel {
   UserModel(
       {
       @required this.name,
-      this.type,
+      this.bio,
       this.avatarUrl,
 });
 
@@ -19,7 +19,7 @@ class UserModel {
     return UserModel(
         
         name: jsonData["login"],
-        type: jsonData["type"],
+        bio: jsonData["bio"],
         avatarUrl: jsonData["avatar_url"]);
   }
 }

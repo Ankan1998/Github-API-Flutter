@@ -15,12 +15,13 @@ void main() {
 
         theme: ThemeData(
           primarySwatch: Colors.teal,
-          textTheme: ThemeData.light().textTheme.copyWith(
-                headline1: TextStyle(
-                    color: Colors.black,
-                    fontFamily: 'Pacifico',
-                    fontSize: 20.0),
-              ),
+          textTheme: ThemeData.light().textTheme.copyWith( 
+            headline1: TextStyle(
+              color: Colors.black,
+              fontFamily: 'Pacifico',
+              fontSize: 20.0
+            ),
+          ),
         ),
         home: GitApp(),
 
