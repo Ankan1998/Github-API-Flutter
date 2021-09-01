@@ -26,13 +26,19 @@ class _UserListWithListViewBuilderState
                     fit: BoxFit.fill
                   ),
                 ),
-                title: Text(
-                  userlistCNInstance.listofusers[index].name,
-                  style: Theme.of(context).textTheme.headline1,
+                title: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    userlistCNInstance.listofusers[index].name,
+                    style: Theme.of(context).textTheme.headline1,
+                  ),
                 ),
-                subtitle: Text(
-                  userlistCNInstance.listofusers[index].type,
-                  style: TextStyle(fontSize: 18.0, color: Colors.black),
+                subtitle: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    userlistCNInstance.listofusers[index].bio,
+                    style: TextStyle(fontSize: 18.0, color: Colors.black),
+                  ),
                 ),
               ),
             );
